@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<aspectj>
+	<weaver options="">
+		
+	</weaver>
+	<aspects>
+		<!-- declare existing aspects to the weaver -->
+		<aspect name="com.chrisruffalo.isolation.interceptor.ClassLoadingInterceptor" />
+	</aspects>
+</aspectj>

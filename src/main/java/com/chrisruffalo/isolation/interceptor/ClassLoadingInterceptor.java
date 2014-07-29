@@ -16,4 +16,10 @@ public class ClassLoadingInterceptor {
         return null;
     }
     
+    @Around(value="call(* System.exit(..))")
+    public void noExit() {
+        // no-op
+        System.out.println("exit call was intercepted");
+    }
+    
 }
